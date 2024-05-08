@@ -1,0 +1,28 @@
+{
+
+  "body": "#eee",
+
+  "header": "#ccc",
+  "header-text": "black",
+  "header-text-active": "#6C27B3",
+
+  "breadcrumb": "black",
+  "breadcrumb-text": "#6C27B3",
+
+  "footer": "#ccc",
+  "footer-text": "black",
+  "footer-text-active": "#aaa",
+
+  "button-default": "#6C27B3",
+  "button-default-text": "white",
+
+  "icon-success":"green",
+  "icon-error":"red",
+  "icon-loading":"black",
+  "icon-warn":"orange",
+
+  "primary": "#555",
+  "secondary": "black",
+  "tertiary": "#ff003e",
+  "quaternary": "#6C27B3"
+}

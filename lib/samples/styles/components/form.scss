@@ -1,0 +1,11 @@
+.form-variant {
+  &-default {
+    --form-rounded: 1rem;
+    --form-bg: transparent;
+    --bg-blur:5px;
+    --form-p: 2rem;
+    --form-button-pt: 2rem !important;
+    --form-border:2px solid var(--color-quaternary);
+    @apply shadow-2xl max-w-[500px];
+  }
+}

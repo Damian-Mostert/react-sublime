@@ -1,6 +1,6 @@
 {
-  "name": "next-sublime",
-  "version": "1.0.5",
+  "name": "react-sublime",
+  "version": "1.0.0",
   "description": "",
   "main": "bin.js",
   "bin": "./bin.js",
@@ -8,5 +8,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Damian Mostert",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "prompt-sync": "^4.2.0",
+    "sass": "^1.77.0",
+    "tailwindcss": "^3.4.3"
+  }
 }

@@ -1,0 +1,26 @@
+.list-variant {
+  &-default {
+    --li-index: black;
+    --li-text: black;
+    --li-size: 1rem;
+    li::before{
+      --glitch-amount:2px;
+      font-style: italic;
+      text-transform: uppercase;
+      color: var(--color-primary )!important;
+      animation: text-glitch 1s infinite;
+    }
+  }
+  &-light {
+    --li-index: white;
+    --li-text: white;
+    --li-size: 1rem;
+    li::before{
+      --glitch-amount:2px;
+      font-style: italic;
+      text-transform: uppercase;
+      color: white !important;
+      animation: text-glitch 1s infinite;
+    }
+  }
+}

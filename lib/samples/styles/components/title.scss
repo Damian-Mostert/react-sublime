@@ -1,0 +1,15 @@
+.title-variant {
+  &-default {
+    &-pre {
+      @apply text-sm text-primary;
+    }
+    &-text {
+      @apply font-thick text-2xl uppercase text-primary italic;
+      &-extra {
+        @apply pl-2 text-transparent font-thick;
+        --stroke:1px var(--color-primary);
+        text-shadow: 2px 2px 0px var(--color-quaternary)
+      }
+    }
+  }
+}
