@@ -1,1 +1,1 @@
-{ "inputDirectory": "test/input", "outputDirectory": "test/output" }
+{ "inputDirectory": "test/build", "outputDirectory": "test/out" }

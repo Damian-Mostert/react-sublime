@@ -1,0 +1,62 @@
+.button-variant {
+  &-default {
+    --button-bg: var(--color-button-default);
+    --button-text: var(--color-button-default-text);
+    --button-lg-text: 12px;
+    --button-md-text: 8px;
+    --button-rounded: 10px;
+    --button-hover-text: white;
+    --button-min-w: 135px;
+    --button-hover-bg: rgb(133, 133, 133);
+    @apply font-thick;
+  }
+
+  &-header {
+    --button-text: var(--color-header-text);
+    --button-hover-text: var(--color-header-text-active);
+    --button-min-w: 135px;
+    --button-lg-text: 12px;
+    --button-md-text: 8px;
+    @apply font-thin;
+  }
+  &-header-active {
+    --button-text: var(--color-header-text-active);
+    --button-hover-text: var(--color-header-text);
+    --button-min-w: 135px;
+    --button-lg-text: 12px;
+    --button-md-text: 8px;
+    @apply font-thick;
+  }
+  &-footer {
+    --button-text: var(--color-footer-text);
+    --button-hover-text: var(--color-footer-text-active);
+    --button-min-w: 135px;
+    --button-lg-text: 12px;
+    --button-md-text: 8px;
+    @apply font-thick;
+  }
+  &-footer-active {
+    --button-text: var(--color-footer-text-active);
+    --button-hover-text: var(--color-footer-text);
+    --button-min-w: 135px;
+    --button-lg-text: 12px;
+    --button-md-text: 8px;
+    @apply font-thick;
+  }
+  &-footer-light {
+    --button-text: var(--color-footer-text);
+    --button-hover-text: var(--color-footer-text-active);
+    --button-min-w: 135px;
+    --button-lg-text: 12px;
+    --button-md-text: 8px;
+    @apply font-thin;
+  }
+  &-footer-light-active {
+    --button-text: var(--color-footer-text-active);
+    --button-hover-text: var(--color-footer-text);
+    --button-min-w: 135px;
+    --button-lg-text: 12px;
+    --button-md-text: 8px;
+    @apply font-thin;
+  }
+}

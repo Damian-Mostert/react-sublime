@@ -1,0 +1,16 @@
+.icon {
+  //in depth icon styles;
+  @apply w-full flex justify-center pb-2;
+  &-success {
+    --icon-color: var(--color-icon-success);
+  }
+  &-error {
+    --icon-color: var(--color-icon-error);
+  }
+  &-warn {
+    --icon-color: var(--color-icon-warn);
+  }
+  &-loading {
+    --icon-color: var(--color-icon-loading);
+  }
+}

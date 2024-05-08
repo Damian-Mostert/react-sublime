@@ -1,0 +1,48 @@
+html {
+  * {
+    color: var(--color-primary);
+    font-family: var(--font-default);
+    @apply focus:outline-none active:outline-none;
+  }
+  body {
+    --bg: var(--color-body);
+    //background-image: url("/bg.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    main {
+      position: relative;
+      width: 100vw;
+      max-width: 100vw;
+      min-height: 100vh;
+    }
+  }
+}
+
+//helpers
+* {
+  --filter-bl: 0px;
+  --bg: transparent;
+  --bg-blur: 0px;
+
+  filter: blur(var(--filter-bl));
+  -webkit-filter: blur(var(--filter-bl));
+
+  backdrop-filter: blur(var(--bg-blur));
+  -webkit-backdrop-filter: blur(var(--bg-blur));
+
+  stroke: var(--stroke);
+  -webkit-text-stroke: var(--stroke);
+
+  background: var(--bg);
+}
+
+picture {
+  @apply absolute;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-body);
+}

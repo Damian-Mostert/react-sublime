@@ -1,0 +1,38 @@
+.input-variant {
+  &-default {
+    --input-font-size: 0.75rem;
+    --label-font-size: 0.75rem;
+    --label-text: #333;
+    --input-background: #eee;
+    --input-text: black;
+    --error-label-text: #fd9a20;
+    --dot-bg: #fd9a20;
+    --dot: #cc6423;
+    --input-link-text: 0.7rem;
+    --input-link-color: #fd9a20;
+    --input-rounded: 1rem;
+    @apply relative;
+    .input {
+      @apply px-5 outline focus:outline focus:outline-1 focus:outline-[#999] outline-1 outline-[#999];
+      &-link {
+        @apply absolute -mt-2 text-right w-full;
+      }
+    }
+  }
+  &-padded-boolean {
+    --label-font-size: 0.75rem;
+    --label-text: white;
+    --error-label-text: #fd9a20;
+    --dot-bg: white;
+    --dot: black;
+    .input-boolean-container {
+      @apply p-2 bg-quaternary rounded-3xl w-full min-w-[80%];
+    }
+    .label {
+      @apply pr-2;
+    }
+    .input-error {
+      @apply text-white p-2 bg-[#704612] rounded-3xl text-center;
+    }
+  }
+}

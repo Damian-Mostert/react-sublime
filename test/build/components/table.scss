@@ -1,0 +1,15 @@
+.table-variant{
+    &-default {
+      --table-rounded: 0.5rem;
+      --thead-bg: #bbb;
+      --thead-bg-alt: #aaa;
+      --thead-text: black;
+      --tbody-bg: white;
+      --tbody-bg-alt: #eee;
+      --tbody-text: black;
+      --tfoot-bg: #111;
+      --tfoot-bg-alt: #222;
+      --tfoot-text: red;
+    }
+  }
+  

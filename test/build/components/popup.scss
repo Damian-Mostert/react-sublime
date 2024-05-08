@@ -1,0 +1,13 @@
+.popup {
+    --bg: #aaa;
+    //popup bg
+    &-bg {
+        &-default{
+            --bg: #00000040;
+        }
+        &-blur {
+           --bg-blur:5px;
+           --bg: #00000090;
+        }
+    }
+}
