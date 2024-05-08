@@ -109,16 +109,16 @@ $font-thick: 'myriad-bold';
 }
 
 
-@import "src/lib/styles/components/button.scss";
-@import "src/lib/styles/components/form.scss";
-@import "src/lib/styles/components/icon.scss";
-@import "src/lib/styles/components/input.scss";
-@import "src/lib/styles/components/layout.scss";
-@import "src/lib/styles/components/list.scss";
-@import "src/lib/styles/components/popup.scss";
-@import "src/lib/styles/components/table.scss";
-@import "src/lib/styles/components/text.scss";
-@import "src/lib/styles/components/title.scss";
+@import "test/build/components/button.scss";
+@import "test/build/components/form.scss";
+@import "test/build/components/icon.scss";
+@import "test/build/components/input.scss";
+@import "test/build/components/layout.scss";
+@import "test/build/components/list.scss";
+@import "test/build/components/popup.scss";
+@import "test/build/components/table.scss";
+@import "test/build/components/text.scss";
+@import "test/build/components/title.scss";
 //import external
 @import "sublime-styles/button.scss";
 @import "sublime-styles/form.scss";
