@@ -1,0 +1,12 @@
+{
+  "name": "next-sublime",
+  "version": "1.0.5",
+  "description": "",
+  "main": "bin.js",
+  "bin": "./bin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damian Mostert",
+  "license": "ISC"
+}
