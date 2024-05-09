@@ -2,15 +2,15 @@
   //in depth icon styles;
   @apply w-full flex justify-center pb-2;
   &-success {
-    --icon-color: var(--color-icon-success);
+    --icon-color: green;
   }
   &-error {
-    --icon-color: var(--color-icon-error);
+    --icon-color: red;
   }
   &-warn {
-    --icon-color: var(--color-icon-warn);
+    --icon-color: orange;
   }
   &-loading {
-    --icon-color: var(--color-icon-loading);
+    --icon-color: red;
   }
 }
