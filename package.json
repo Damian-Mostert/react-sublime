@@ -1,6 +1,6 @@
 {
   "name": "react-sublime",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "",
   "main": "bin.js",
   "bin": "./bin.js",
@@ -10,6 +10,7 @@
   "author": "Damian Mostert",
   "license": "ISC",
   "dependencies": {
+    "chokidar": "^3.6.0",
     "fs-extra": "^11.2.0",
     "sass": "^1.77.0",
     "sass-loader": "^14.2.1",
