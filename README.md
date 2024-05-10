@@ -82,7 +82,7 @@ export default {
 after building the following stylesheet will be available, import it in your css or jsx.
 
 ```css
-import "@sublime/sublime.scss"
+import "{your input directory}/sublime.scss"
 ```
 
 # components
