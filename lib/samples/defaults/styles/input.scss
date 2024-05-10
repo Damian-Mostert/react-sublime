@@ -1,0 +1,85 @@
+
+.input {
+  @apply relative flex flex-wrap rounded-[var(--input-rounded)];
+
+  &-size {
+    &-full {
+      --input-width: 100%;
+    }
+
+    &-half {
+      --input-width: 50%;
+    }
+
+    &-half\:md\:full {
+      --input-width: 50%;
+      padding-right: 0.5rem;
+      &:nth-child(2n) {
+        padding-right: 0rem;
+        padding-left: 0.5rem;
+      }
+      @media screen and (max-width: $screen-page) {
+        --input-width: 100%;
+        padding: 0px !important;
+      }
+    }
+  }
+  &-g {
+    @apply flex justify-center;
+  }
+  &-color {
+    @apply m-auto;
+  }
+  &-image {
+    @apply w-full h-36 m-auto object-contain outline-dotted outline-2 p-1 bg-[var(--input-background)] outline-current;
+  }
+
+  &-select{
+    text-align: left;
+  }
+  &-boolean {
+    @apply m-0 cursor-pointer rounded-full flex w-4 h-4 border-2 border-[var(--dot)] justify-center items-center relative bg-[var(--dot-bg)];
+    &-container {
+      @apply flex flex-wrap flex-row-reverse items-start w-full;
+      .label {
+        width: max-content;
+        max-width: 100%;
+        margin-right: auto;
+      }
+      .input-error {
+        width: 100%;
+        margin: auto;
+      }
+    }
+    &-dot {
+      @apply rounded-full p-[0.25rem] absolute bg-[var(--dot)];
+    }
+  }
+
+  &-container {
+    @apply w-[var(--input-width)] mt-4 text-left;
+
+    label {
+      @apply w-full text-[var(--label-text)] pl-3;
+      font-size: var(--label-font-size);
+    }
+    select {
+      @apply w-full left-0 text-left rounded-[var(--input-rounded)] bg-[var(--input-bg)] text-[var(--input-text)] active:outline-none focus:outline-none p-1;
+      font-size: var(--input-font-size);
+    }
+  }
+
+  &-error {
+    @apply w-full text-[var(--error-label-text)] pl-3 pt-1;
+    font-size: var(--label-font-size);
+  }
+
+  @apply w-full bg-[var(--input-background)] text-[var(--input-text)] active:outline-none focus:outline-none p-1;
+  font-size: var(--input-font-size);
+
+  &-link{
+    font-size: var(--input-link-text);
+    color:var(--input-link-color);
+
+  }
+}

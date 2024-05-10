@@ -1,0 +1,105 @@
+$screen-page:1200px;
+
+.layout {
+  background: var(--layout-bg);
+  color: var(--layout-text);
+
+  &-default {
+    @apply w-full flex py-4;
+
+    &-container {
+      @apply m-auto w-full max-w-[var(--screen-page)] px-8 flex flex-wrap h-max;
+    }
+  }
+
+  &-split {
+    @apply w-full flex flex-wrap py-4;
+
+    &-container {
+      &-a {
+        max-width: calc(var(--screen-page) / 2);
+        margin-left: auto;
+        padding: 1rem 2rem;
+        width: 100%;
+        @media screen and (max-width: $screen-page) {
+          @apply w-full;
+          max-width: none;
+        }
+      }
+      &-b {
+        max-width: calc(var(--screen-page) / 2);
+        margin-right: auto;
+        padding: 1rem 2rem;
+        width: 100%;
+        @media screen and (max-width: $screen-page) {
+          @apply w-full;
+          max-width: none;
+        }
+      }
+    }
+
+    &-right {
+      @apply w-full flex flex-wrap;
+      @media screen and (max-width: $screen-page) {
+        @apply flex-col-reverse;
+      }
+      &-container {
+        &-a {
+          @apply w-1/2;
+
+          @media screen and (max-width: $screen-page) {
+            @apply w-full;
+          }
+        }
+        &-b {
+          max-width: calc(var(--screen-page) / 2);
+          margin-right: auto;
+          padding: 1rem 2rem;
+          width: 100%;
+          @media screen and (max-width: $screen-page) {
+            max-width: none;
+            margin-right: none;
+          }
+        }
+      }
+    }
+    &-left {
+      @apply w-full flex flex-wrap;
+      &-container {
+        &-a {
+          max-width: calc(var(--screen-page) / 2);
+          margin-left: auto;
+          padding: 1rem 2rem;
+          width: 100%;
+          @media screen and (max-width: $screen-page) {
+            max-width: none;
+            margin-left: none;
+          }
+        }
+        &-b {
+          @apply w-1/2;
+
+          @media screen and (max-width: $screen-page) {
+            @apply w-full;
+          }
+        }
+      }
+    }
+  }
+
+  &-center {
+    @apply w-full flex p-8;
+
+    &-container {
+      @apply flex justify-center items-center w-full h-max;
+    }
+  }
+
+  &-flex {
+    @apply w-full flex py-8;
+
+    &-container {
+      @apply w-full flex;
+    }
+  }
+}

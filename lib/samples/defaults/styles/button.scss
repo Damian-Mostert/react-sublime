@@ -1,0 +1,18 @@
+
+a.button {
+  @apply h-min;
+}
+.button {
+  font-size: var(--button-lg-text);
+  @media screen and (max-width: $screen-page) {
+    font-size: var(--button-md-text);
+  }
+  @media screen and (screen(md)) {
+  }
+  transition: 0.5s all;
+  @apply text-[var(--button-text)] hover:text-[var(--button-hover-text)] hover:bg-[var(--button-hover-bg)] min-w-[var(--button-min-w)]  py-2 px-4 flex justify-center items-center relative cursor-pointer rounded-[var(--button-rounded)] tracking-widest;
+  background: var(--button-bg);
+  &:hover {
+    background: var(--button-hover-bg);
+  }
+}

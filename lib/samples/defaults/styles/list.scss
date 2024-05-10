@@ -1,0 +1,27 @@
+
+.list {
+	&-arrows {
+		li {
+			&::before {
+				content: ">";
+				@apply px-2 text-[var(--li-index)];
+			}
+		}
+	}
+	&-dots {
+		li {
+			&::before {
+				content: "•";
+				@apply px-2 text-[var(--li-index)];
+			}
+		}
+	}
+	li {
+		letter-spacing: var(--spacing);
+    text-align: var(--align);
+		@apply w-full pt-2 text-[var(--li-size)];
+	}
+	&-container{
+		@apply w-full;
+	}
+}

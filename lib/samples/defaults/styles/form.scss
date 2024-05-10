@@ -1,0 +1,11 @@
+
+.form {
+  @apply flex flex-wrap rounded-[var(--form-rounded)] bg-[var(--form-bg)] p-[var(--form-p)] m-auto;
+  border: var(--form-border);
+  .button {
+    @apply mt-[var(--form-button-pt)] m-auto;
+  }
+  &-fields{
+    @apply w-full flex-wrap flex;
+  }
+}

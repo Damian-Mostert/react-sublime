@@ -1,0 +1,57 @@
+.table {
+  @apply rounded-[var(--table-rounded)] overflow-hidden w-full flex flex-wrap;
+  td {
+      overflow: hidden;
+      text-wrap: nowrap;
+      text-overflow: ellipsis;
+      width: 100%;
+  }
+  tr{
+    @apply flex w-full;
+  }
+  td{
+    @apply w-full flex items-center p-2;
+  }
+  .table-head {
+      @apply w-full flex flex-wrap;
+      tr {
+          background-color: var(--thead-bg);
+          &:nth-child(2n) {
+              background-color: var(--thead-bg-alt);
+          }
+      }
+      td {
+          color: var(--thead-text);
+          text-align: center;
+          padding: 0.5rem;
+      }
+  }
+
+  .table-body {
+      @apply w-full flex flex-wrap;
+      tr {
+          background-color: var(--tbody-bg);
+          &:nth-child(2n) {
+              background-color: var(--tbody-bg-alt);
+          }
+      }
+      td {
+          color: var(--tbody-text);
+          text-align: center;
+      }
+  }
+  .table-foot {
+      @apply w-full flex flex-wrap;
+      tr {
+          background-color: var(--tfoot-bg);
+          &:nth-child(2n) {
+              background-color: var(--tfoot-bg-alt);
+          }
+      }
+      td {
+          color: var(--tfoot-text);
+          text-align: center;
+          padding: 0.5rem;
+      }
+  }
+}
