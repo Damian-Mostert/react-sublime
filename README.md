@@ -30,10 +30,10 @@ this will make a folder with the following schema
 
 ```plain
 - components
-    - component
+    - component.scss
 - fonts
-    - folder
-        - font
+    - font-name
+        - font-type.otf
 - colors.json
 - fonts.json
 - screens.json
@@ -62,7 +62,7 @@ import sizes from "./src/styles/sizes.json";
 import fonts from "./src/styles/fonts.json";
 
 export default {
-  mode: "jit",
+    //other config ...
   theme: {
     extend: {
       colors,
@@ -71,7 +71,8 @@ export default {
       fontFamily: fonts,
     },
   },
-  plugins: [],
+    //other config ...
+
 };
 
 ```
