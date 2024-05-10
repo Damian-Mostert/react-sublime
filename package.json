@@ -1,6 +1,6 @@
 {
   "name": "react-sublime",
-  "version": "1.0.32",
+  "version": "1.0.34",
   "description": "",
   "main": "bin.js",
   "bin": "./bin.js",
