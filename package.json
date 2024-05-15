@@ -1,13 +1,12 @@
 {
   "name": "react-sublime",
-  "version": "1.0.35",
+  "version": "1.0.47",
   "description": "",
   "main": "bin.js",
   "bin": "./bin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  
   "keywords": [
     "react",
     "sass",
@@ -22,6 +21,7 @@
   "dependencies": {
     "chokidar": "^3.6.0",
     "fs-extra": "^11.2.0",
+    "react-sublime": "^1.0.34",
     "sass": "^1.77.0",
     "sass-loader": "^14.2.1",
     "sublime-components": "^1.0.40",

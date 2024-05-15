@@ -18,7 +18,7 @@
 	}
 	li {
 		letter-spacing: var(--spacing);
-    text-align: var(--align);
+			text-align: var(--align);
 		@apply w-full pt-2 text-[var(--li-size)];
 	}
 	&-container{

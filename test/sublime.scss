@@ -6,39 +6,39 @@
 /*this file auto-builds, do not edit, instead just add a font*/
 @font-face{
 font-family: "calibre-bold";
-src: url("./fonts/calibre/bold.otf");
+src: url("./build/fonts/calibre/bold.otf");
 }
 @font-face{
 font-family: "calibre-light";
-src: url("./fonts/calibre/light.otf");
+src: url("./build/fonts/calibre/light.otf");
 }
 @font-face{
 font-family: "calibre-regular";
-src: url("./fonts/calibre/regular.otf");
+src: url("./build/fonts/calibre/regular.otf");
 }
 @font-face{
 font-family: "myriad-bold";
-src: url("./fonts/myriad/bold.otf");
+src: url("./build/fonts/myriad/bold.otf");
 }
 @font-face{
 font-family: "myriad-light";
-src: url("./fonts/myriad/light.otf");
+src: url("./build/fonts/myriad/light.otf");
 }
 @font-face{
 font-family: "myriad-regular";
-src: url("./fonts/myriad/regular.otf");
+src: url("./build/fonts/myriad/regular.otf");
 }
 @font-face{
 font-family: "sofia-bold";
-src: url("./fonts/sofia/bold.woff");
+src: url("./build/fonts/sofia/bold.woff");
 }
 @font-face{
 font-family: "sofia-light";
-src: url("./fonts/sofia/light.woff");
+src: url("./build/fonts/sofia/light.woff");
 }
 @font-face{
 font-family: "sofia-regular";
-src: url("./fonts/sofia/regular.woff");
+src: url("./build/fonts/sofia/regular.woff");
 }
 
 	//screen
@@ -533,30 +533,28 @@ $screen-page:1200px;
 }
 
 .list {
-	&-arrows {
-		li {
-			&::before {
-				content: ">";
-				@apply px-2 text-[var(--li-index)];
-			}
-		}
-	}
-	&-dots {
-		li {
-			&::before {
-				content: "•";
-				@apply px-2 text-[var(--li-index)];
-			}
-		}
-	}
-	li {
-		letter-spacing: var(--spacing);
-    text-align: var(--align);
-		@apply w-full pt-2 text-[var(--li-size)];
-	}
-	&-container{
-		@apply w-full;
-	}
+  &-arrows {
+    li {
+      &::before {
+        content: ">";
+        @apply px-2 text-[var(--li-index)];
+      }
+    }
+  }
+  &-dots {
+    li {
+      &::before {
+        content: "•";
+        @apply px-2 text-[var(--li-index)];
+      }
+    }
+  }
+  li {
+    @apply w-full pt-2 text-[var(--li-size)];
+  }
+  &-container{
+    @apply w-full;
+  }
 }
 /*defaults*/
 @keyframes PopupGrowBox {
@@ -599,7 +597,9 @@ $screen-page:1200px;
     transition: scale 0.5s;
   }
 }
-.table {
+.slider{
+    @apply w-full;
+}.table {
   @apply rounded-[var(--table-rounded)] overflow-hidden w-full flex flex-wrap;
   td {
       overflow: hidden;
@@ -693,7 +693,7 @@ html {
 		@apply focus:outline-none active:outline-none;
 	}
 	body {
-		--bg: var(--color-body);
+		background: var(--color-body);
 		main {
 			position: relative;
 			width: 100vw;
